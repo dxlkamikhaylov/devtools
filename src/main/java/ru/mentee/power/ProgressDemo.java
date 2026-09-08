@@ -3,9 +3,9 @@ package ru.mentee.power;
 public class ProgressDemo {
     public static void main(String[] args) {
         var progress = new MenteeProgress(
-            "Имя студента", // значение из твоего плана PLAN-2
-            1,               // номер спринта
-            6                // запланированные часы на спринт
+           "Daniil", // значение из твоего плана PLAN-2
+            2,               // номер спринта
+            10               // запланированные часы на спринт
         );
 
         System.out.println(progress.summary());
