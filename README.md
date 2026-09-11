@@ -12,3 +12,5 @@ Quick Start:
 | `menteeName` | String | Имя студента |
 | `sprintNumber` | int | Номер спринта |
 | `plannedHoursPerWeek` | int | Запланированные часы |
+
+# Локальный цикл Git
