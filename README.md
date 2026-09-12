@@ -14,3 +14,4 @@ Quick Start:
 | `plannedHoursPerWeek` | int | Запланированные часы |
 
 # Локальный цикл Git
+# Изменение для PR
