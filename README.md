@@ -18,3 +18,13 @@ Quick Start:
 ### Правило перед push
 Перед отправкой кода (git push) обязательно проверять, что рабочий каталог чист (`git status clean`).
 Проверку выполнять через IDE Commit Tool Window или команду `git status` в CLI.
+
+# DevTools Project
+
+## DVT-6 Один цикл и контроль прогресса - освоение Debug
+
+###
+- Реализован метод `calculateTotalProgress` в `ProgressTracker` с помощью цикла `while`.
+- Написаны юнит-тесты на валидацию данных в `ProgressLoopTest` (`assertThatThrownBy`, `assertThatCode`).
+- Проведена отладка кода через Debugger (панель Variables и окно Evaluate Expression).
+- Проверена усешная сборка и прохождение всех тестов (`./gradlew test`, `./gradlew run`).
