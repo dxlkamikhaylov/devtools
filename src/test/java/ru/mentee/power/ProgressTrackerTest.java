@@ -1,10 +1,10 @@
 package ru.mentee.power;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 import ru.mentee.power.devtools.progress.Mentee;
 import ru.mentee.power.devtools.progress.ProgressTracker;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ProgressTrackerTest {
 

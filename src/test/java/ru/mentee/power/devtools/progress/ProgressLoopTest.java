@@ -7,13 +7,12 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-
 @DisplayName("Тестирование ProgressTracker")
+@SuppressWarnings("checkstyle:MethodName")
 class ProgressLoopTest {
-
   @Test
   @DisplayName("Суммарный прогресс для нескольких mentee с разным прогрессом")
-  void shouldCalculateTotalProgress_whenMultipleMentees() {
+  void shouldCalculateTotalProgressWhenMultipleMentees() {
     ProgressTracker tracker = new ProgressTracker();
     Mentee[] mentees = {
         new Mentee("Иван", "Москва", "Backend разработка", 5, 12),
@@ -30,7 +29,7 @@ class ProgressLoopTest {
 
   @Test
   @DisplayName("Все mentee завершили курс — осталось 0")
-  void shouldCalculateTotalProgress_whenAllMenteesCompleted() {
+  void shouldCalculateTotalProgressWhenAllMenteesCompleted() {
     ProgressTracker tracker = new ProgressTracker();
     Mentee[] mentees = {
         new Mentee("Иван", "Москва", "Backend", 12, 12),
@@ -58,6 +57,5 @@ class ProgressLoopTest {
     assertThatCode(() -> new Mentee("Иван", "Москва", "Backend", 5, 12))
         .doesNotThrowAnyException();
   }
-
 
 }

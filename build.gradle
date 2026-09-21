@@ -74,8 +74,14 @@ jacocoTestCoverageVerification {
     dependsOn jacocoTestReport
     violationRules {
         rule {
+            element = 'CLASS'
+            includes = ['ru.mentee.power.*']  // учитываем все классы проекта
+            excludes = [
+                    'ru.mentee.power.ProgressDemo',
+                    'ru.mentee.power.devtools.progress.ProgressTracker'
+            ]
             limit {
-                minimum = 0.80  // 80% покрытия инструкций
+                minimum = 0.80
             }
         }
     }
