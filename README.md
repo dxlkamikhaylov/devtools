@@ -3,7 +3,7 @@ Quick Start:
 ```bash
 .\gradlew run
 .\gradlew test
-````
+```
 ## Packages
 * `ru.mentee.power` - пакет для основных классов проекта и тестов
 
@@ -22,52 +22,6 @@ Quick Start:
 
 # DevTools Project
 
-## Сценарий ручной проверки DVT-6
-
-### 1. Checkstyle
-
-**Команда:**
-```bash
-./gradlew checkstyleMain
-
-**Ожидаемый вывод:**
-```text
-BUILD SUCCESSFUL
-```
-
-### 2. Тесты
-
-**Команда:**
-```bash
-./gradlew test jacocoTestReport
-```
-
-**Ожидаемый вывод:**
-```text
-BUILD SUCCESSFUL
-```
-
-Отчёт покрытия: `build/reports/jacoco/test/html/index.html`
-
-### 3. Запуск приложения
-
-**Команда:**
-```bash
-./gradlew run
-```
-
-**Ожидаемый вывод:**
-```text
-Суммарно: пройдено 25 из 36 уроков, осталось 11 уроков
-```
-
-### 4. Debug-сценарий
-
-1. Открыть `ProgressTracker.calculateTotalProgress`
-2. Поставить breakpoint на строке с `while`
-3. Запустить Debug (Shift+F9)
-4. Проверить значения переменных `totalCompleted`, `totalTotal`, `left` в окне Variables
-```
 ## Кодстайл-гайд проекта devtools
 
 Проект следует правилам Google Java Style Guide с адаптацией.
