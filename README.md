@@ -75,18 +75,19 @@ Quick Start:
 ### 1. Debug-сценарий (StudentList)
 1. Запустить приложение в режиме отладки (Debug).
 2. Установить точку останова (breakpoint) в методе `addStudent` класса `StudentList`.
-3. Вызвать метод `addStudent` (например, через тестовый класс или временный код в `main`).
+3. Вызвать метод addStudent через Evaluate Expression (Alt+F8).
 4. Убедиться, что программа остановилась на точке останова.
 5. Проверить значения переменных в отладчике.
 6. Выполнить шаг с обходом (Step Over) или шаг с заходом (Step Into) для проверки логики.
 7. Убедиться, что студент успешно добавлен в список.
+8. Проверить размер коллекции studentList.size().
 
 ### 2. Сценарий «Checkstyle упал — починил»
 
 1. Запустить проверку Checkstyle командой `./gradlew checkstyleMain`.
 2. Сборка упала с ошибкой `BUILD FAILED`.
 3. Открыть отчет Checkstyle (`build/reports/checkstyle/main.html`).
-4. Обнаружено нарушение правила **LineLength** в файле `MenteeProgress.java` (или где оно реально было у тебя).
+4. Обнаружено нарушение правила **LineLength** в файле ProgressTracker.java (метод calculateTotalProgress).
     *   *Текст ошибки в отчете:* "Line is longer than 100 characters (found 120)."
 5. Исправить код: перенести часть длинной строки на новую строку.
     *   *Было:* `return "Суммарно: пройдено " + totalCompleted + " из " + totalTotal + " уроков осталось " + left + " уроков";`
