@@ -8,7 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Тестирование ProgressTracker")
-@SuppressWarnings("checkstyle:MethodName")
+
 class ProgressLoopTest {
   @Test
   @DisplayName("Суммарный прогресс для нескольких mentee с разным прогрессом")

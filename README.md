@@ -82,10 +82,15 @@ Quick Start:
 7. Убедиться, что студент успешно добавлен в список.
 
 ### 2. Сценарий «Checkstyle упал — починил»
-1. Запустить проверку Checkstyle командой `./gradlew checkstyleMain checkstyleTest`.
-2. Убедиться, что сборка прошла успешно (BUILD SUCCESSFUL).
-3. Если есть ошибки, открыть отчет Checkstyle (`build/reports/checkstyle/main.html`).
-4. Найти нарушенное правило (например, "LineLength" или "WhitespaceAround").
-5. Исправить код в соответствии с правилом.
-6. Повторно запустить проверку и убедиться, что ошибка исчезла.
-7. Запустить проверку JaCoCo командой `./gradlew jacocoTestReport` и убедиться, что покрытие тестами соответствует требуемому порогу (не менее 0.80).
+
+1. Запустить проверку Checkstyle командой `./gradlew checkstyleMain`.
+2. Сборка упала с ошибкой `BUILD FAILED`.
+3. Открыть отчет Checkstyle (`build/reports/checkstyle/main.html`).
+4. Обнаружено нарушение правила **LineLength** в файле `MenteeProgress.java` (или где оно реально было у тебя).
+    *   *Текст ошибки в отчете:* "Line is longer than 100 characters (found 120)."
+5. Исправить код: перенести часть длинной строки на новую строку.
+    *   *Было:* `return "Суммарно: пройдено " + totalCompleted + " из " + totalTotal + " уроков осталось " + left + " уроков";`
+    *   *Стало:*
+     ```java
+     return "Суммарно: пройдено " + totalCompleted + " из " + totalTotal
+             + " уроков осталось " + left + " уроков";
