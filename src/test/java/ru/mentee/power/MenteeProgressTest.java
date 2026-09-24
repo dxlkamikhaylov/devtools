@@ -10,7 +10,7 @@ class MenteeProgressTest {
     void shouldFormatSummary_whenProgressCreated() {
         MenteeProgress progress = new MenteeProgress("Даниил", 1, 8);
 
-        assertThat(progress.summary()).isEqualTo("Sprint 1 → Даниил: planned 8 h");
+        assertThat(progress.summary()).isEqualTo("Спринт 1 -> Даниил: planned 8 h");
     }
 
     @Test
