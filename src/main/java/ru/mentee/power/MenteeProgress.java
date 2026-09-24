@@ -2,7 +2,7 @@ package ru.mentee.power;
 
 public record MenteeProgress(String menteeName, int sprintNumber, int plannedHoursPerWeek) {
   public boolean readyForSprint() {
-    return plannedHoursPerWeek >= 3;
+  return plannedHoursPerWeek >= 3;
   }
 
   public String summary() {
