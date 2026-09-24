@@ -1,0 +1,43 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/1/.gradle/wrapper/dists/gradle-9.6.0-bin/42k10rwplmzkhuboz9kdazi7s/gradle-9.6.0/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :checkstyleMain FAILED
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\MenteeProgress.java:4:5: 'method def modifier' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\MenteeProgress.java:5:9: 'method def' дочерний элемент имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\MenteeProgress.java:6:5: 'method def rcurly' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\MenteeProgress.java:8:5: 'method def modifier' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\MenteeProgress.java:9:9: 'method def' дочерний элемент имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\MenteeProgress.java:11:5: 'method def rcurly' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:4:5: 'method def modifier' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:5:9: 'method def' дочерний элемент имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:10:9: 'method def' дочерний элемент имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:11:9: 'if' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:12:13: 'if' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:13:9: 'if rcurly' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:14:13: 'else' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:15:9: 'else rcurly' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:17:9: 'method def' дочерний элемент имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[ant:checkstyle] [ERROR] C:\devtools\src\main\java\ru\mentee\power\ProgressDemo.java:19:5: 'method def rcurly' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':checkstyleMain' (registered by plugin 'org.gradle.checkstyle').
+> A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
+   > Checkstyle rule violations were found. See the report at: file:///C:/devtools/build/reports/checkstyle/main.html
+     Checkstyle files with violations: 2
+     Checkstyle violations by severity: [error:16]
+
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 2s
+3 actionable tasks: 3 executed
