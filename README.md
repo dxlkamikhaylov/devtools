@@ -1,3 +1,5 @@
+[![Java CI](https://github.com/dxlkamikhaylov/devtools/actions/workflows/ci.yml/badge.svg)](https://github.com/dxlkamikhaylov/devtools/actions/workflows/ci.yml)
+
 # Devtools project
 Quick Start:
 ```bash
@@ -14,3 +16,7 @@ Quick Start:
 | `plannedHoursPerWeek` | int | Запланированные часы |
 
 # Локальный цикл Git
+
+### Правило перед push
+Перед отправкой кода (git push) обязательно проверять, что рабочий каталог чист (`git status clean`).
+Проверку выполнять через IDE Commit Tool Window или команду `git status` в CLI.
