@@ -1,3 +1,5 @@
+[![Java CI](https://github.com/dxlkamikhaylov/devtools/actions/workflows/ci.yml/badge.svg)](https://github.com/dxlkamikhaylov/devtools/actions/workflows/ci.yml)
+
 # Devtools project
 Quick Start:
 ```bash
