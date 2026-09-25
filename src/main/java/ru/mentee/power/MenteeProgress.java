@@ -11,13 +11,20 @@ package ru.mentee.power;
 public record MenteeProgress(String menteeName, int sprintNumber, int plannedHoursPerWeek) {
 
   /**
+   * Минимальное количество часов в неделю, при котором менти считается
+   * готовым к спринту.
+   */
+  private static final int MIN_HOURS_FOR_SPRINT = 3;
+
+  /**
    * Проверяет, готов ли менти к спринту.
    *
-   * @return {@code true}, если запланировано не менее 3 часов в неделю
+   * @return {@code true}, если запланировано не менее
+   *         {@value #MIN_HOURS_FOR_SPRINT} часов в неделю
    */
 
   public boolean readyForSprint() {
-    return plannedHoursPerWeek >= 3;
+    return plannedHoursPerWeek >= MIN_HOURS_FOR_SPRINT;
   }
 
   /**
