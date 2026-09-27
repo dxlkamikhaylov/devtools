@@ -194,11 +194,11 @@ git fetch -p
 
 ### Таблица запросов
 
-| № | Запрос | Источник | Альтернатива | Статус |
-|---|---|---|---|---|
-| 1 | `site:search.maven.org "lombok" OR site:mvnrepository.com "lombok"` | search.maven.org | mvnrepository.com | 200 OK |
-| 2 | `site:docs.oracle.com/en/java/javase "Stream"` | docs.oracle.com | Java SE 17 docs | 200 OK |
-| 3 | `site:www.jetbrains.com/help "keymap"` | www.jetbrains.com/help | Встроенная справка IDE | 200 OK |
+| № | Запрос | Источник | Альтернатива | Статус | Дата |
+|---|---|---|---|---|---|
+| 1 | `site:search.maven.org "lombok" OR site:mvnrepository.com "lombok"` | search.maven.org | mvnrepository.com | 200 OK | 27.09.2026 |
+| 2 | `site:docs.oracle.com/en/java/javase "Stream"` | docs.oracle.com | Java SE 17 docs | 200 OK | 27.09.2026 |
+| 3 | `site:www.jetbrains.com/help "keymap"` | www.jetbrains.com/help | Встроенная справка IDE | 200 OK | 27.09.2026 |
 
 ### AI-промпты
 
