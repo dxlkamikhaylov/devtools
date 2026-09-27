@@ -154,3 +154,39 @@ Quick Start:
 > отрицательные числа) выбрасывать `IllegalArgumentException`
 > с понятным сообщением об ошибке.
 
+## Правила сдачи заданий (DVT-10)
+
+### Формат сообщения для треда Code Review
+
+- [Номер урока]: [Краткое название]
+- Репозиторий: [ссылка на репозиторий]
+- Pull Request: [ссылка на PR]
+- Статус: готова / есть вопрос
+@dev_tools
+
+### Пример — сдача DVT-9
+
+- DVT-9: Code Review Checklist, examples, and self-review results
+- Репозиторий: https://github.com/dxlkamikhaylov/devtools
+- Pull Request: https://github.com/dxlkamikhaylov/devtools/pull/7
+- Статус: готова
+@dev_tools
+
+### Полезные команды
+
+```bash
+# Начало работы над заданием
+git checkout master
+git pull origin master
+git checkout -b feature/DVT-N
+
+# Перед сдачей
+git status
+./gradlew check
+
+# После merge
+git checkout master
+git branch -d feature/DVT-N
+git push origin --delete feature/DVT-N
+git fetch -p
+```
